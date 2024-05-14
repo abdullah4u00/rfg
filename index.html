@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- swiper css -->
+<link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <nav>
+
+
+
+
+
+
+   <div class="con1">
+
+
+ 
+
+    <div class="item item-1">
+        <img class="img-1" src="./amazon-logo-1024x683-removebg-preview.png" width="120px" alt="">
+    </div>
+
+
+    <div class="item item-2">
+        <p class="p-1">Deliver to Abdallah</p>
+        <!-- <svg class="loc-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg> -->
+          <p class="p-2">Hyderbad 500028</p>
+
+    </div>
+
+
+
+    <div class="item item-3">
+        <input type="text" name="query" id="iop" placeholder="Search...">
+      
+    </div>
+
+
+
+    <div class="item item-4">
+
+        <img src="./india-paper-flag-patriotic-background-national-138241478.webp" width="30px" alt="">
+
+  EN
+    </div>
+
+
+
+
+    <div class="item item-5">
+       <p class="para3">Hello, Abdallah</p>
+       <p class="para4">Account & Lists</p>
+    </div>
+
+
+
+
+    <div class="item item-6">
+ 
+        <p class="para5">Returns</p>
+        <p class="para6">& Orders</p>
+
+
+
+    </div>
+    <div class="item item-7" onclick="showSidebar()">
+       <!-- <p class="para7">Cart</p> -->
+
+       <svg class="m" xmlns="http://www.w3.org/2000/svg" width="50" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </div>
+
+</div>
+
+
+<div class="sidebar">
+
+    <div class="close"  onclick="closeSidebar()">
+
+        <svg  style="margin-left: 20px;
+        margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+
+
+    </div>
+
+<div class="deliver">
+    <p class="para7">Deliver to Abdallah</p>
+</div>
+
+<div class="returns">
+    <p class="para8">Returns and orders</p>
+</div>
+
+<div class="acc">
+<p class="para9">Account</p>
+</div>
+
+<div class="log">
+    <p class="para10">Log out</p>
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+<!-- ==================================== -->
+
+<!-- <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./amazon-npcp6jc782ixp9zs.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./download.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./amazon-shopping-voucher_lvjqrl.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+    <h1</h1>
+  </div> -->
+
+
+
+ <!-- ========================================================== -->
+
+
+ <header>
+  <div class="container">
+    
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+
+
+<!-- 1st card -->
+  <div class="col top">
+    <div class="card">
+      <div class="card-body">
+        <h3>Pick up where you left off 10% off and </h3>
+        
+        <!-- 1st row -->
+
+<div class="row">
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/slime1.jpeg" class="w-100" alt="">
+    <p>pack of 5</p>
+  </div>
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/slime2.jpg" class="w-100" alt="">
+    <p>fruit slime</p>
+
+
+  </div>
+</div>
+
+<!-- 2nd row -->
+<div class="row">
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/slime6.jpg" class="w-100" alt="">
+    <p>YBN of 6</p>
+  </div>
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/slime1.jpeg" class="w-100" alt="">
+<p>slime</p>
+
+  </div>
+</div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ==================================== -->
+
+
+  <!-- 2nd card -->
+
+  <div class="col top">
+    <div class="card hg">
+      <div class="card-body">
+        
+        <!-- <h3>Continue shopping deals and amazing</h3> -->
+        <h3>Pick up where you left off 10% off and </h3>
+
+        <!-- 1st row -->
+
+<div class="row">
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/iphone11s.jpg" class="w-100" alt="">
+    <p>Iphone 11</p>
+  </div>
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/iphone pros.jpg" class="w-100" alt="">
+    <p>pro max </p>
+
+
+
+  </div>
+</div>
+
+<!-- 2nd row -->
+<div class="row">
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/cover2.jpg" class="w-100" alt="">
+    <p>case</p>
+  </div>
+  <div class="col-6 curse">
+    <img src="./pictures (amazon)/coverrr.jpg" class="w-100" alt="">
+    <p>Flip cover</p>
+
+
+  </div>
+</div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- 3rd card -->
+
+<div class="col top">
+  <div class="card hg">
+    <div class="card-body">
+
+      <!-- <h3>Deals for you in phones and Accessor</h3> -->
+      <h3>Pick up where you left off 10% off and </h3>
+      
+      <!-- 1st row -->
+
+<div class="row">
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/phone blue.jpg" class="w-100" alt="">
+  <p>Redmi 5</p>
+</div>
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/phone brown.jpg" class="w-100" alt="">
+  <p>Oppo 11</p>
+
+
+</div>
+</div>
+
+<!-- 2nd row -->
+<div class="row">
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/phone brown.jpg" class="w-100" alt="">
+  <p>Oppo</p>
+</div>
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/phone blue.jpg" class="w-100" alt="">
+  <p>Redmi</p>
+
+
+</div>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- 4th card -->
+
+<div class="col top">
+  <div class="card hg">
+    <div class="card-body">
+      <h3>Appliances for your home | upto 55%</h3>
+      
+      <!-- 1st row -->
+
+<div class="row">
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/ac.jpg" class="w-100" alt="">
+  <p>AC</p>
+</div>
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/fridge.jpg" class="w-100" alt="">
+  <p>Fridge</p>
+
+
+</div>
+</div>
+
+<!-- 2nd row -->
+<div class="row">
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/micro.jpg" class="w-100" alt="">
+  <p>Micro</p>
+</div>
+<div class="col-6 curse">
+  <img src="./pictures (amazon)/washing machine.jpg" class="w-100" alt="">
+  <p>Machines</p>
+
+
+</div>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!-- =============================================================================== -->
+
+
+<!-- 2nd row of cardsss -->
+
+
+</div>
+</header>
+
+
+<!-- ======================================================== -->
+
+
+<!-- main starts -->
+
+
+
+
+<main class="mt-3">
+  
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <video controls src="./videos/3209828-uhd_3840_2160_25fps.mp4" class="w-100">
+        Prime video:
+      </video>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="card text-center">
+        <div class="card-body">
+          <h3>Up to 75% off</h3>
+          <img src="./pictures (amazon)/headphones.jpg" class="w-100" alt="">
+
+          <a class="hype" href="">Shop now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+
+
+
+      <div class="card hg">
+        <div class="card-body">
+          
+          <!-- <h3>Continue shopping deals and amazing</h3> -->
+          <h3>Pick up where you left</h3>
+  
+          <!-- 1st row -->
+  
+  <div class="row">
+    <div class="col-6 curse">
+      <img src="./pictures (amazon)/iphone11s.jpg" class="w-100" alt="">
+      <p>Iphone 11</p>
+    </div>
+    <div class="col-6 curse">
+      <img src="./pictures (amazon)/iphone pros.jpg" class="w-100" alt="">
+      <p>pro max </p>
+  
+  
+  
+    </div>
+  </div>
+  
+  <!-- 2nd row -->
+  <div class="row">
+    <div class="col-6 curse">
+      <img src="./pictures (amazon)/cover2.jpg" class="w-100" alt="">
+      <p>case</p>
+    </div>
+    <div class="col-6 curse">
+      <img src="./pictures (amazon)/coverrr.jpg" class="w-100" alt="">
+      <p>Flip cover</p>
+  
+  
+    </div>
+  </div>
+  
+  
+  
+  
+  
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+<!-- ======================================== -->
+
+
+<!-- ==================================================== -->
+<div class="my-4 ms-3">
+<h3 style="display: inline;" class="poi ms-3">Today's Deals</h3>
+<p style="display: inline;" class="capara1">See all deals</p>
+
+<div class="bodycard shadow swiper mySwiper">
+  <div class="container-fluid content786 swiper-wrapper">
+    <!-- <h3 style="display: inline;">Today's Deals</h3>
+    <p style="display: inline;" class="capara1">See all deals</p> -->
+
+    <!-- 1st card -->
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider1.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 31% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;12,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+
+  <!-- 2nd card -->
+
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider2.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 36% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;11,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+
+
+  <!-- 3rd card -->
+
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider3.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 13% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;32,499/- <span class="span3">(starting from 26,990/-)</span></h4>
+    </div>
+  </div>
+
+
+  <!-- 4th card -->
+
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider4.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 20% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;29,499/- <span class="span3">(starting from 17,999/-)</span></h4>
+    </div>
+  </div>
+
+
+  <!-- 5th card -->
+
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider5.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 31% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;20,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+
+
+  <!-- 6th card -->
+
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider6.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 31% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;12,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+<!-- 7th -->
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider7.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 31% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;12,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+
+<!-- 8th -->
+  <div class="card c1 car swiper-slide">
+    <div class="card-body">
+      <img src="./pictures (amazon)/slider8.jpg" alt="error">
+      <p class="capara2"><span class="span1"> Up to 31% off </span> <span class="span2"> Limited time deal  </span></p>
+
+      <h4>&#8377;12,499/- <span class="span3">(starting from 9999/-)</span></h4>
+    </div>
+  </div>
+
+
+</div>
+<div class="swiper-pagination"></div>
+
+</div>
+
+</div>
+
+
+<!-- ================================================== -->
+
+
+
+
+<!-- ===================================================== -->
+
+
+
+
+<div class="headd bg-light">
+
+  <h3 class="mx-4">Best sellers in Clothing</h3>
+
+<div class="row row-cols-3 row-cols-sm-3 row-cols-md-5 row-col-lg-6 row-cols-xl-7 cardss shadow">
+ 
+
+
+
+<!-- 1st card -->
+
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider9.jpg" alt="error">
+  </div>
+</div>
+
+<!-- 2nd card -->
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider10.jpg" alt="error">
+  </div>
+</div>
+
+
+<!-- 3rd card -->
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider11.jpg" alt="error">
+  </div>
+</div>
+
+
+<!-- 4th card -->
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider12.jpg" alt="error">
+  </div>
+</div>
+
+<!-- 5th card -->
+
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider13.jpg" alt="error">
+  </div>
+</div>
+
+
+<!-- 6th card -->
+
+<div class="card cont">
+  <div class="card-body">
+    <img src="./pictures (amazon)/slider14.jpg" alt="error">
+  </div>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- ======================================= -->
+
+<!-- ========================================= -->
+
+
+
+ <div class="headd2">
+  <div class="port row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 shadow">
+
+
+    <!-- 1st card -->
+<div class="card cont5">
+  <div class="card-body">
+    <h3>Only at &#8377;585 | Wearable portable fan</h3>
+    <img class="kl1" src="./pictures (amazon)/card1.jpg" alt="">
+  </div>
+</div>
+
+
+
+<!-- 2nd  card -->
+
+<div class="card cont5">
+
+<div class="card-body">
+  <h3>Love adhura | Watch only on miniTV</h3>
+  <img class="kl1" src="./pictures (amazon)/card2.jpg" class="w-100" alt="">
+</div>
+
+
+</div>
+
+
+
+
+<div class="card cont5 ">
+
+
+<div class="card-body">
+  <h3>Customer's Most-Loved Fashion for you</h3>
+  <div class="row">
+    <div class="col-6">
+
+      <img src="./pictures (amazon)/card3.1.jpg"  alt="">
+
+    </div>
+
+    <div class="col-6">
+      <img src="./pictures (amazon)/card3.2.jpg"  alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <img src="./pictures (amazon)/card3.3.jpg"  alt="">
+    </div>
+
+
+    <div class="col-6">
+      <img src="./pictures (amazon)/card3.4.jpg"  alt="">
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="card cont5 hell">
+
+
+  <div class="card-body text-center">
+    <h3>Bestsellers in Women's Indian Clothing</h3>
+    <div class="row">
+      <div class="col-6">
+  
+        <img src="./pictures (amazon)/card4.1.jpg"  alt="">
+        <p>Allen Solly</p>
+  
+      </div>
+  
+      <div class="col-6">
+        <img src="./pictures (amazon)/card4.2.jpg"  alt="">
+        <p>Biba</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-6">
+        <img src="./pictures (amazon)/card4.3.jpg"  alt="">
+        <p>Womenista</p>
+      </div>
+  
+  
+      <div class="col-6">
+        <img src="./pictures (amazon)/card4.4.jpg"  alt="">
+        <p>Harpa</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+  </div>
+ </div>
+
+
+
+<!-- =========================================== -->
+
+<!-- ================================================= -->
+
+
+
+
+
+<!-- footer================ -->
+
+
+<div class="foot">
+
+
+<div class="ite ite-1">
+  <h6>Get to Know us</h6>
+  <p>About US</p>
+  <p>Careers</p>
+  <p>Press Releases</p>
+  <p>Amazon Science</p>
+</div>
+
+<div class="ite ite-2">
+  <h6>Connect with Us</h6>
+  <p>Facebook</p>
+  <p>Twitter</p>
+  <p>Instagram</p>
+</div>
+
+
+
+<div class="ite ite-3">
+  <h6>Make Money with Us</h6>
+  <p>Sell on Amazon</p>
+  <p>Sell under Amazon Accelerator</p>
+  <p>Amzon global selling</p>
+  <p>Become an Affiliate</p>
+  <p>Fulfilment by Amazon</p>
+  <p>Advertise Your Products</p>
+  <p>Amazon Pay on Merchants</p>
+</div>
+
+
+
+
+<div class="ite ite-4">
+  <h6>Let Us Help You</h6>
+  <p>Your Account</p>
+  <p>Returns Centre</p>
+  <p>100% Purchase Protection</p>
+  <p>Amazon App Download</p>
+  <p>Help</p>
+</div>
+
+
+
+</div>
+
+<!-- ==================== -->
+
+
+<div class="copyright">
+
+<div class="it it-1 mt-1">
+  <a href="https://www.amazon.com" target="_blank">
+  <img src="./amazon-logo-1024x683-removebg-preview.png" width=100px alt="">
+</a>
+</div>
+
+
+
+<div class="">
+  <button class="mnb">
+  India
+  </button>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    function showSidebar(){
+        let show = document.querySelector('.sidebar');
+        show.style.display = 'flex';
+    }
+
+    function closeSidebar(){
+        let close = document.querySelector('.sidebar');
+        close.style.display = 'none';
+    }
+
+</script>
+
+
+
+<!-- swiper js -->
+    
+<script src="swiper-bundle.min.js"></script>
+
+
+<!-- ============== -->
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
+</body>
+
+
+
+</body>
+</html>
